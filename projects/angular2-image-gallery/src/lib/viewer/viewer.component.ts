@@ -159,6 +159,8 @@ export class ViewerComponent {
             }
             this.currentIdx += direction
 
+            this.imageService.updateSelectedImageIndex(this.currentIdx)
+
             if (swipe) {
                 this.hideNavigationArrows()
             } else {
